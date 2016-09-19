@@ -8,6 +8,8 @@ RUN build_deps="python-dev build-essential" && \
     pip install elasticsearch && \
     pip install pandas && \
     pip install python-dateutil && \
+    pip install slacker && \
+    pip install ascii_graph && \
     apt-get purge -y --auto-remove ${build_deps} && \
     apt-get autoremove -y
 
