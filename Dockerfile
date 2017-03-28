@@ -10,6 +10,7 @@ RUN build_deps="python-dev build-essential" && \
     pip install python-dateutil && \
     pip install slacker && \
     pip install ascii_graph && \
+    pip install terminaltables && \
     apt-get purge -y --auto-remove ${build_deps} && \
     apt-get autoremove -y
 
